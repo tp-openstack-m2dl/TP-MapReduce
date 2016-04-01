@@ -26,6 +26,13 @@ def Reduce(Mapping):
   return (Mapping[0], sum(pair[1] for pair in Mapping[1]))
 
 
+class Person(object):
+  """docstring for Person"""
+  def __init__(self, age, nbAssur):
+    super(Person, self).__init__()
+    self.age = age
+    self.nbAssur = nbAssur
+    
 if __name__ == '__main__':
  
   # Load file, stuff it into a string
@@ -36,3 +43,7 @@ if __name__ == '__main__':
   # Sort the term frequencies in nonincreasing order
   for pair in term_frequencies:
     print pair[0], ":", pair[1]
+
+  # Create random person
+  Person(random.randint(8, 110), random.randint(0, 10));
+
