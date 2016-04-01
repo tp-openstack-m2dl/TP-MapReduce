@@ -12,7 +12,7 @@ each token.
 def Map(L):
   results = []
   for w in L:
-    results.append ((w, 1))
+    results.append ((w.age, w.nbAssur))
 
   return results
  
@@ -43,7 +43,4 @@ if __name__ == '__main__':
   # Sort the term frequencies in nonincreasing order
   for pair in term_frequencies:
     print pair[0], ":", pair[1]
-
-  # Create random person
-  Person(random.randint(8, 110), random.randint(0, 10));
-
+    
