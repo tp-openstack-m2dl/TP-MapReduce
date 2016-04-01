@@ -14,6 +14,8 @@ public class MapReduceService {
     }
 
 
+    public List<TermFrequence> MapReduce()
+
     //
     //  SINGLETON
     //
