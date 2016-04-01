@@ -16,14 +16,14 @@ def Map(L):
 
   return results
  
- 
+
 """
 Given a (token, [(token, 1) ...]) tuple, collapse all the
 count tuples from the Map operation into a single term frequency
 number for this token, and return a final tuple (token, frequency).
 """
 def Reduce(Mapping):
-  return (Mapping[0], sum(pair[1] for pair in Mapping[1]))
+  return (Mapping[0], sum(pair[1] for pair in Mapping[1]) / len(Mapping[1]))
 
 
 class Person(object):
