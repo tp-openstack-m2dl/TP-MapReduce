@@ -7,5 +7,5 @@ import java.util.Map;
  * Created by benoit on 01/04/2016.
  */
 public interface IReduce {
-    Map<String, Integer> reduce(Map<String, List<TermFrequence>> frequences);
+    TermFrequence reduce(List<TermFrequence> frequences);
 }
