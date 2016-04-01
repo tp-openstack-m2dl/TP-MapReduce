@@ -36,7 +36,7 @@ class Person(object):
 if __name__ == '__main__':
  
   # Load file, stuff it into a string
-  input_list = [random.randint(0,10) for i in range(100)]
+  input_list = [Person(random.randint(8,110), random.randint(0,10)) for i in range(1000)]
 
   term_frequencies = mapreduce.MapReduce(Map, Reduce, input_list)
  
